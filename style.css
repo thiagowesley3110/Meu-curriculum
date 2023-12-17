@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+:root{
+    --cor-background:#191717;
+    --cor-borda:#DFD7BF;
+    --cor-cont:#7D7C7C;
+    --cor-font:#fff;
+    --font-principal:'Lato', sans-serif;
+    --font-secundaria:'Mochiy Pop One', sans-serif;
+    
+}
+body{
+    background-image: url(img/Design\ sem\ nome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.navbar span{
+    color: #7D7C7C;
+    font-family:var(--font-secundaria);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.navbar span:hover{
+    color: #fff;
+    transition: all 0.5s;
+    
+}
+.lista_nav a{
+    color: #7D7C7C;
+}
+.lista_nav a:hover{
+    color: #BED754;
+    transition: all 0.5s;
+    transform: scaley(1.1);
+    transform: scalex(1.1);
+}
+.lista_nav{
+    display: flex;
+    gap: 1em;
+    font-size: 1.5em;    
+}
+.container__img img{
+    width: 450px; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #87878798;
+    box-shadow: 0px 0px 6px 0px  #BED754;
+    padding: 0.2em;
+    cursor: pointer;
+    
+}
+
+.container__img{  
+    font-size: 1.8em;
+    color: var(--cor-borda);
+    display: flex; 
+    flex-direction: column-reverse;   
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.navbar{
+    background-color: #1917176d;
+    color:var(--cor-font);
+    box-shadow: 0 1px 8px #ffffff47;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4em;
+}
+.projeto__grid{
+    display: grid;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    "imagem projeto1"
+    "imagem projeto2"
+    "imagem projeto3"
+    "imagem projeto4"
+    "imagem projeto5";
+}
+.projetos0{
+    grid-column: 1/2;
+    grid-row: 1/5;
+
+}
+.container__principal h1{
+    font-family: var(--font-principal);
+    padding-bottom: 1em;
+}
+.container__principal{
+   
+    column-gap: 2em;
+    padding: 0 5em;
+}
+.container__portifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.projetos video{
+    width: 300px;
+    height: 300px;
+}
+
+.projetos video{
+    width: 250px;
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.projetos{
+    display: flex;
+    border: 0.3px solid #7D7C7C;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 6px 0px  #7D7C7C;
+}
+.projetos__descricao span{
+    font-family: var(--font-principal);
+    padding: 0 3em;
+    text-align: center;
+
+}
+.projetos__descricao{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+
+}
+.projetos__descricao p{
+    font-family: var(--font-principal);
+    color: #7D7C7C;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.projetos__descricao h2{
+    font-family: var(--font-secundaria);
+    font-weight: 300;
+    color: #BED754;
+    font-size: 2em;
+    padding: 0 2em;
+}
+.projetos__descricao a{
+    text-decoration: none;
+    color:var(--cor-font);
+    background-color:hsla(71, 62%, 59%, 0.838);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+.projetos__descricao a:hover{
+    background-color:#0000004c;  
+    border: 0.3px solid #BED754;
+    transition: all 0.3s;
+    transform: scaleY(1.1);
+    transform: scalex(1.1); 
+    box-shadow: 0px 0px 8px 1px #BED754; 
+        
+}
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00000070;
+    box-shadow: 0px 0px 8px 0px  #7D7C7C;
+}
+.footer__container h2{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    padding-top: 1em;
+    
+} 
+
+.logo__footer{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: #BED754;
+
+}
+.logo__footer a{
+    color: #fff;
+    font-size: 4em;
+    padding: 1em 0 0.5em 0;
+} 
+.logo__footer a:hover{
+    color: #BED754;
+    transition: all 0.3s;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+}
